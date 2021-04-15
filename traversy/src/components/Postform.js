@@ -30,6 +30,7 @@ class PostForm extends Component {
         })
             .then((res) => res.json())
             .then((data) => console.log(data));
+        this.setState({ title: '', body: '' });
     }
     render() {
         return (
